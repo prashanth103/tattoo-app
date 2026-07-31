@@ -53,14 +53,6 @@ export default function ArtistDetails() {
                   <p className="font-display text-lg">{artist.experience}</p>
                 </div>
                 <div>
-                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Rating</p>
-                  <div className="flex items-center gap-1.5">
-                    <Star size={15} className="fill-primary text-primary" strokeWidth={1.5} />
-                    <span className="font-display text-lg">{artist.rating}</span>
-                    <span className="text-xs text-text-muted font-body">({artist.reviews})</span>
-                  </div>
-                </div>
-                <div>
                   <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Location</p>
                   <div className="flex items-center gap-1.5">
                     <MapPin size={15} strokeWidth={1.5} />

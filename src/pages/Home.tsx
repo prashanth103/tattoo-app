@@ -1,9 +1,9 @@
 import MainLayout from "@/layouts/MainLayout";
 import PageTransition from "@/components/common/PageTransition";
 import HeroBanner from "@/components/sections/HeroBanner";
-import FeaturedArtists from "@/components/sections/FeaturedArtists";
-import TrendingTattoos from "@/components/sections/TrendingTattoos";
-import Categories from "@/components/sections/Categories";
+import OurArtists from "@/components/sections/OurArtists";
+import FeaturedWork from "@/components/sections/FeaturedWork";
+import TattooStyles from "@/components/sections/TattooStyles";
 import PopularStyles from "@/components/sections/PopularStyles";
 import GallerySection from "@/components/sections/GallerySection";
 import FeaturedStudios from "@/components/sections/FeaturedStudios";
@@ -16,9 +16,9 @@ export default function Home() {
     <MainLayout>
       <PageTransition>
         <HeroBanner />
-        <FeaturedArtists />
-        <TrendingTattoos />
-        <Categories />
+        <OurArtists />
+        <FeaturedWork />
+        <TattooStyles />
         <PopularStyles />
         <GallerySection />
         <FeaturedStudios />

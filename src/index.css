@@ -96,11 +96,11 @@
   }
 
   .page-title {
-    @apply font-display text-[clamp(2.75rem, 6vw, 5.5rem)] leading-[0.98] tracking-[-0.01em] text-text-primary;
+    @apply font-display text-[clamp(2.75rem,6vw,5.5rem)] leading-[0.98] tracking-[-0.01em] text-text-primary;
   }
 
   .section-title {
-    @apply font-display text-[clamp(2rem, 3.4vw, 3.25rem)] leading-[1.02] tracking-[-0.01em] text-text-primary;
+    @apply font-display text-[clamp(2rem,3.4vw,3.25rem)] leading-[1.02] tracking-[-0.01em] text-text-primary;
   }
 
   .subtitle {

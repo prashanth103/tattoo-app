@@ -33,7 +33,7 @@ export default function HeroBanner() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="eyebrow mb-6 inline-block"
             >
-              A Curated Tattoo Marketplace
+              TATTOO STUDIO · MADHAPUR, HYDERABAD
             </motion.span>
 
             <h1 className="page-title">
@@ -43,7 +43,7 @@ export default function HeroBanner() {
                 transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
                 className="block"
               >
-                Ink, considered
+                Your idea,
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 40 }}
@@ -51,7 +51,7 @@ export default function HeroBanner() {
                 transition={{ duration: 0.9, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
                 className="block italic text-text-secondary"
               >
-                before it's permanent.
+                made permanent.
               </motion.span>
             </h1>
           </div>
@@ -63,11 +63,10 @@ export default function HeroBanner() {
             className="lg:col-span-4 flex flex-col gap-6 lg:pb-3"
           >
             <p className="subtitle">
-              Discover independent tattoo artists by style, studio, and story —
-              then book a real consultation, not a form submission.
+              Custom tattoos designed around your ideas, memories and references — created with attention to detail and made personal to you.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button to="/artists" variant="primary">Explore Artists</Button>
+              <Button to="/contact" variant="primary">BOOK A TATTOO</Button>
               <Button to="/gallery" variant="secondary">View Gallery</Button>
             </div>
           </motion.div>

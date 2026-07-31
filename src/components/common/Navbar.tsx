@@ -8,7 +8,7 @@ const links = [
   { label: "Home", to: "/" },
   { label: "Artists", to: "/artists" },
   { label: "Gallery", to: "/gallery" },
-  { label: "Categories", to: "/categories" },
+  { label: "Styles", to: "/styles" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
 ];
@@ -55,7 +55,7 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button to="/artists" variant="primary" className="!px-6 !py-3 !text-[12px]">
+          <Button to="/contact" variant="primary" className="!px-6 !py-3 !text-[12px]">
             Book a Session
           </Button>
         </div>

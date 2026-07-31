@@ -50,7 +50,7 @@ export default function Footer() {
           <span className="eyebrow text-white/40">Explore</span>
           <Link to="/artists" className="text-sm text-white/70 hover:text-white transition-colors">Artists</Link>
           <Link to="/gallery" className="text-sm text-white/70 hover:text-white transition-colors">Gallery</Link>
-          <Link to="/categories" className="text-sm text-white/70 hover:text-white transition-colors">Categories</Link>
+          <Link to="/styles" className="text-sm text-white/70 hover:text-white transition-colors">Categories</Link>
         </div>
 
         <div className="md:col-span-2 flex flex-col gap-4">

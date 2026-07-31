@@ -18,7 +18,7 @@ export default function App() {
         <Route path="/artists" element={<Artists />} />
         <Route path="/artists/:slug" element={<ArtistDetails />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/categories" element={<CategoriesPage />} />
+        <Route path="/styles" element={<CategoriesPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/404" element={<NotFound />} />

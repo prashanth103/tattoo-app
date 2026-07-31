@@ -34,12 +34,8 @@ export default function ArtistCard({ artist, index = 0 }: ArtistCardProps) {
         <div className="pt-5 flex items-start justify-between gap-3">
           <div>
             <h3 className="font-display text-xl text-text-primary">{artist.name}</h3>
-            <p className="text-sm text-text-secondary font-body mt-1">{artist.speciality}</p>
-            <p className="text-xs text-text-muted font-body mt-1">{artist.location}</p>
-          </div>
-          <div className="flex items-center gap-1 shrink-0 pt-1">
-            <Star size={13} strokeWidth={1.5} className="fill-primary text-primary" />
-            <span className="text-xs text-text-secondary font-body">{artist.rating}</span>
+            <p className="text-sm text-text-secondary font-body mt-1">{artist.experience}</p>
+            <p className="text-xs text-text-muted font-body mt-1">{artist.speciality}</p>
           </div>
         </div>
       </Link>
