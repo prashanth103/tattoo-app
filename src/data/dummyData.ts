@@ -16,30 +16,14 @@ const img = (seed: string, w: number, h: number) =>
 export const categories: Category[] = [
   {
     id: 1,
-    name: "Japanese",
-    slug: "japanese",
+    name: "Portrait",
+    slug: "portrait",
     description: "Bold linework, mythic creatures, and flowing composition.",
     image: img("cat-japanese", 800, 1000),
     count: 34,
   },
   {
     id: 2,
-    name: "Fine Line",
-    slug: "fine-line",
-    description: "Delicate single-needle detail with quiet restraint.",
-    image: img("cat-fineline", 800, 1000),
-    count: 51,
-  },
-  {
-    id: 3,
-    name: "Blackwork",
-    slug: "blackwork",
-    description: "Dense saturated ink built from pattern and contrast.",
-    image: img("cat-blackwork", 800, 1000),
-    count: 28,
-  },
-  {
-    id: 4,
     name: "Realism",
     slug: "realism",
     description: "Photographic depth rendered in shadow and light.",
@@ -47,17 +31,33 @@ export const categories: Category[] = [
     count: 22,
   },
   {
+    id: 3,
+    name: "Fine Line",
+    slug: "fine-line",
+    description: "Delicate single-needle detail with quiet restraint.",
+    image: img("cat-fineline", 800, 1000),
+    count: 51,
+  },
+  {
+    id: 4,
+    name: "Minimal",
+    slug: "minimal",
+    description: "Dense saturated ink built from pattern and contrast.",
+    image: img("cat-blackwork", 800, 1000),
+    count: 28,
+  },
+  {
     id: 5,
-    name: "Geometric",
-    slug: "geometric",
+    name: "Black & Grey",
+    slug: "black-grey",
     description: "Precision structure — sacred geometry meets skin.",
     image: img("cat-geometric", 800, 1000),
     count: 19,
   },
   {
     id: 6,
-    name: "Minimal",
-    slug: "minimal",
+    name: "Lettering",
+    slug: "lettering",
     description: "The fewest possible lines to say the most.",
     image: img("cat-minimal", 800, 1000),
     count: 40,
@@ -67,39 +67,27 @@ export const categories: Category[] = [
 export const styles: Style[] = [
   {
     id: 1,
-    name: "Traditional",
-    description: "Bold outlines, saturated color, timeless motifs.",
+    name: "Share Your Idea",
+    description: "Tell us what you have in mind. Bring a reference, photo, sketch or describe the concept.",
     image: img("style-traditional", 900, 700),
   },
   {
     id: 2,
-    name: "Neo-Traditional",
-    description: "Classic form, contemporary palette and detail.",
+    name: "Discuss the Design",
+    description: "We'll discuss the design, size, placement and details before moving forward.",
     image: img("style-neotrad", 900, 700),
   },
   {
     id: 3,
-    name: "Watercolor",
-    description: "Soft gradients that bleed like pigment on paper.",
+    name: "Get Tattooed",
+    description: "Your artist brings the agreed design to life with care and attention to detail.",
     image: img("style-watercolor", 900, 700),
   },
   {
     id: 4,
-    name: "Tribal",
-    description: "Ancestral pattern language in solid black form.",
+    name: "Aftercare",
+    description: "We'll guide you on caring for your tattoo while it heals.",
     image: img("style-tribal", 900, 700),
-  },
-  {
-    id: 5,
-    name: "Dotwork",
-    description: "Texture and tone built stipple by stipple.",
-    image: img("style-dotwork", 900, 700),
-  },
-  {
-    id: 6,
-    name: "Illustrative",
-    description: "Sketch-like linework with a hand-drawn spirit.",
-    image: img("style-illustrative", 900, 700),
   },
 ];
 
@@ -205,32 +193,32 @@ export const testimonials: Testimonial[] = [
 export const faqs: FAQItem[] = [
   {
     id: 1,
-    question: "How do I book a consultation with an artist?",
+    question: "How do I book a tattoo at Samava?",
     answer:
-      "Open any artist profile and use the consultation request button. Most studios respond within two to three business days with available dates.",
+      "You can contact us on WhatsApp or call us to discuss your tattoo idea, preferred date, size and placement. We'll guide you through the next steps.",
   },
   {
     id: 2,
-    question: "Can I see healed photos of an artist's work?",
+    question: "Can I bring my own design or reference?",
     answer:
-      "Many artist galleries include a mix of fresh and healed pieces. Look for the healed label on individual gallery images where available.",
+      "Yes. You can bring a photo, sketch, reference image or simply explain your idea. We'll discuss it with you and work on a design that suits the tattoo and placement.",
   },
   {
     id: 3,
-    question: "What should I bring to a first session?",
+    question: "Do you create custom tattoos?",
     answer:
-      "Reference imagery, a general sense of placement and size, and comfortable clothing that gives easy access to the area you're having worked on.",
+      "Yes. We work on custom designs as well as tattoos based on client ideas and references. Share what you have in mind and we'll discuss the possibilities with you.",
   },
   {
     id: 4,
-    question: "Do artists offer touch-up sessions?",
+    question: "How should I prepare for my tattoo session?",
     answer:
-      "Touch-up policies vary by studio and are usually outlined during your consultation — most studios offer a complimentary touch-up window.",
+      "Get a good night's sleep, eat beforehand, stay hydrated and wear comfortable clothing that gives easy access to the tattoo area. Avoid arriving under the influence of alcohol or other intoxicants.",
   },
   {
     id: 5,
-    question: "How far in advance should I book?",
+    question: "How much does a tattoo cost?",
     answer:
-      "Popular artists often have waitlists of several months for large-scale work. Smaller fine-line pieces can sometimes be booked within a few weeks.",
+      "Pricing depends on the design, size, placement and level of detail. Share your idea with us on WhatsApp for a discussion and estimate.",
   },
 ];

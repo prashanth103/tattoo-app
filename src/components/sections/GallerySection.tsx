@@ -14,7 +14,7 @@ export default function GallerySection() {
             index="05"
             eyebrow="The Gallery"
             title="A closer look at the work"
-            subtitle="Fresh and healed pieces from across our artist network, updated weekly."
+            subtitle="Explore tattoos created at Samava, from custom designs and personal ideas to reference-inspired pieces."
           />
           <Button to="/gallery" variant="ghost" className="shrink-0">
             Open Full Gallery

@@ -3,14 +3,14 @@ import { Star } from "lucide-react";
 import { testimonials } from "@/data/dummyData";
 import SectionTitle from "@/components/common/SectionTitle";
 
-export default function Testimonials() {
+export default function ClientStories() {
   return (
     <section className="section-padding py-24 md:py-32">
       <div className="container-width">
         <SectionTitle
           index="07"
-          eyebrow="Collector Stories"
-          title="What clients say after"
+          eyebrow="CLIENT STORIES"
+          title="What our clients say"
           align="center"
         />
 
@@ -41,7 +41,6 @@ export default function Testimonials() {
                 <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover" loading="lazy" />
                 <div>
                   <p className="text-sm text-text-primary font-body">{t.name}</p>
-                  <p className="text-xs text-text-muted font-body">{t.role}</p>
                 </div>
               </div>
             </motion.div>

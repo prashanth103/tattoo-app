@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 import { styles } from "@/data/dummyData";
 import SectionTitle from "@/components/common/SectionTitle";
 
-export default function PopularStyles() {
+export default function HowITWorks() {
   return (
     <section className="section-padding py-24 md:py-32 bg-surface">
       <div className="container-width">
         <SectionTitle
           index="04"
-          eyebrow="Popular Styles"
-          title="Six ways to tell a story in ink"
+          eyebrow="HOW IT WORKS"
+          title="From idea to ink"
         />
 
         <div className="mt-14 divide-y divide-border">

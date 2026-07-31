@@ -10,7 +10,7 @@ export default function FAQ() {
   return (
     <section className="section-padding py-24 md:py-32 bg-surface">
       <div className="container-width max-w-4xl mx-auto">
-        <SectionTitle index="08" eyebrow="Good to Know" title="Frequently asked" align="center" />
+        <SectionTitle index="08 —" eyebrow="GOOD to Know" title="Frequently asked" align="center" />
 
         <div className="mt-14 divide-y divide-border">
           {faqs.map((faq) => {

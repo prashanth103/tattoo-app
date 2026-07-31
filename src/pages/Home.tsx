@@ -4,10 +4,10 @@ import HeroBanner from "@/components/sections/HeroBanner";
 import OurArtists from "@/components/sections/OurArtists";
 import FeaturedWork from "@/components/sections/FeaturedWork";
 import TattooStyles from "@/components/sections/TattooStyles";
-import PopularStyles from "@/components/sections/PopularStyles";
+import HowITWorks from "@/components/sections/HowITWorks";
 import GallerySection from "@/components/sections/GallerySection";
-import FeaturedStudios from "@/components/sections/FeaturedStudios";
-import Testimonials from "@/components/sections/Testimonials";
+import CustomTattoos from "@/components/sections/CustomTattoos";
+import ClientStories from "@/components/sections/ClientStories";
 import FAQ from "@/components/sections/FAQ";
 import Newsletter from "@/components/sections/Newsletter";
 
@@ -19,11 +19,12 @@ export default function Home() {
         <OurArtists />
         <FeaturedWork />
         <TattooStyles />
-        <PopularStyles />
+        <HowITWorks />
         <GallerySection />
-        <FeaturedStudios />
-        <Testimonials />
+        <CustomTattoos />
+        <ClientStories />
         <FAQ />
+        {/* News letter remove */}
         <Newsletter />
       </PageTransition>
     </MainLayout>

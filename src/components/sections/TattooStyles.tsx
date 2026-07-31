@@ -2,15 +2,15 @@ import { categories } from "@/data/dummyData";
 import CategoryCard from "@/components/cards/CategoryCard";
 import SectionTitle from "@/components/common/SectionTitle";
 
-export default function Categories() {
+export default function TattooStyles() {
   return (
     <section className="section-padding py-24 md:py-32">
       <div className="container-width">
         <SectionTitle
           index="03"
-          eyebrow="Browse by Category"
-          title="Find your language of ink"
-          subtitle="Six recurring visual traditions, each with its own discipline and history."
+          eyebrow="TATTOO STYLES"
+          title="Find a style that speaks to you"
+          subtitle="Explore different tattoo styles for inspiration, or bring us your own idea and we'll work with you to create something personal."
           align="center"
         />
 
