@@ -10,10 +10,18 @@ import CustomTattoos from "@/components/sections/CustomTattoos";
 import ClientStories from "@/components/sections/ClientStories";
 import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
+import SEO from "@/components/common/SEO";
 
 export default function Home() {
   return (
     <MainLayout>
+      <SEO
+        title="Best Tattoo Studio in Hyderabad"
+        description="Samava Tattoo Studio creates custom tattoos, realism, blackwork, fine line, anime, geometric, and cover-up tattoos in Hyderabad."
+        keywords="Tattoo Studio Hyderabad, Best Tattoo Artist Hyderabad, Custom Tattoos Hyderabad, Fine Line Tattoos, Realism Tattoos, Blackwork Tattoos"
+        url="https://www.samavatattoostudio.com/"
+      />
+
       <PageTransition>
         <HeroBanner />
         <OurArtists />

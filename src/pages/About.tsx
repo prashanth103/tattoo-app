@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import MainLayout from "@/layouts/MainLayout";
 import PageTransition from "@/components/common/PageTransition";
 import Button from "@/components/common/Button";
+import SEO from "@/components/common/SEO";
 
 const values = [
   {
@@ -21,6 +22,12 @@ const values = [
 export default function About() {
   return (
     <MainLayout>
+      <SEO
+        title="About Us"
+        description="Learn more about Samava Tattoo Studio and our commitment to exceptional tattoo artistry."
+        url="https://www.samavatattoostudio.com/about"
+      />
+
       <PageTransition>
         <section className="section-padding pt-36 pb-24">
           <div className="container-width grid grid-cols-1 lg:grid-cols-12 gap-10">

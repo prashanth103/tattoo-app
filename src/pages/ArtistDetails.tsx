@@ -6,6 +6,7 @@ import PageTransition from "@/components/common/PageTransition";
 import Button from "@/components/common/Button";
 import TattooCard from "@/components/cards/TattooCard";
 import { artists, tattoos } from "@/data/dummyData";
+import SEO from "@/components/common/SEO";
 
 export default function ArtistDetails() {
   const { slug } = useParams();
@@ -18,6 +19,12 @@ export default function ArtistDetails() {
 
   return (
     <MainLayout>
+      <SEO
+        title={`${artist.name} | Tattoo Artist`}
+        description={artist.bio}
+        url={`https://www.samavatattoostudio.com/artists/${artist.slug}`}
+      />
+
       <PageTransition>
         <section className="relative pt-32 pb-16 section-padding">
           <div className="container-width grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">

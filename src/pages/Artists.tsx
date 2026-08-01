@@ -4,6 +4,7 @@ import PageTransition from "@/components/common/PageTransition";
 import SearchBar from "@/components/common/SearchBar";
 import ArtistCard from "@/components/cards/ArtistCard";
 import { artists } from "@/data/dummyData";
+import SEO from "@/components/common/SEO";
 
 const specialities = ["All", ...Array.from(new Set(artists.map((a) => a.speciality)))];
 
@@ -23,6 +24,12 @@ export default function Artists() {
 
   return (
     <MainLayout>
+      <SEO
+        title="Tattoo Artists"
+        description="Meet the talented tattoo artists at Samava Tattoo Studio in Hyderabad."
+        url="https://www.samavatattoostudio.com/artists"
+      />
+
       <PageTransition>
         <section className="section-padding pt-36 pb-16">
           <div className="container-width">

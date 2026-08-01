@@ -4,6 +4,7 @@ import MainLayout from "@/layouts/MainLayout";
 import PageTransition from "@/components/common/PageTransition";
 import TattooCard from "@/components/cards/TattooCard";
 import { tattoos, artists, styles } from "@/data/dummyData";
+import SEO from "@/components/common/SEO";
 
 export default function Gallery() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -31,6 +32,12 @@ export default function Gallery() {
 
   return (
     <MainLayout>
+      <SEO
+        title="Tattoo Gallery"
+        description="Browse our portfolio of custom tattoos and artwork."
+        url="https://www.samavatattoostudio.com/gallery"
+      />
+
       <PageTransition>
         <section className="section-padding pt-36 pb-16">
           <div className="container-width">

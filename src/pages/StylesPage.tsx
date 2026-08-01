@@ -2,10 +2,17 @@ import MainLayout from "@/layouts/MainLayout";
 import PageTransition from "@/components/common/PageTransition";
 import StyleCard from "@/components/cards/StyleCard";
 import { styles, howItWorks } from "@/data/dummyData";
+import SEO from "@/components/common/SEO";
 
 export default function StylesPage() {
   return (
     <MainLayout>
+      <SEO
+        title="Tattoo Styles"
+        description="Explore realism, blackwork, fine line, anime, geometric and custom tattoo styles."
+        url="https://www.samavatattoostudio.com/styles"
+      />
+
       <PageTransition>
         <section className="section-padding pt-36 pb-16">
           <div className="container-width">

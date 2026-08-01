@@ -4,6 +4,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import MainLayout from "@/layouts/MainLayout";
 import PageTransition from "@/components/common/PageTransition";
 import Button from "@/components/common/Button";
+import SEO from "@/components/common/SEO";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -30,6 +31,12 @@ Message: ${form.message}`;
 
   return (
     <MainLayout>
+      <SEO
+        title="Contact"
+        description="Book your tattoo consultation or visit Samava Tattoo Studio in Hyderabad."
+        url="https://www.samavatattoostudio.com/contact"
+      />
+
       <PageTransition>
         <section className="section-padding pt-36 pb-16">
           <div className="container-width">
