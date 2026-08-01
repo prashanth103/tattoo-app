@@ -5,16 +5,16 @@ import Button from "@/components/common/Button";
 
 const values = [
   {
-    title: "Hand-vetted, always",
-    body: "Every artist on the platform is reviewed by our editorial team before their profile goes live — no self-listing, no pay-to-rank.",
+    title: "Personal Design",
+    body: "Every tattoo starts with your story. We take time to understand your ideas before putting ink to skin.",
   },
   {
-    title: "Consultations first",
-    body: "We push every booking through a real conversation before a deposit changes hands, so both sides walk in aligned.",
+    title: "Precision Craftsmanship",
+    body: "Every design is created with careful attention to placement, detail, balance, and longevity.",
   },
   {
-    title: "Built for longevity",
-    body: "We favor artists who think in decades — placement, aging, and skin all factor into how work is presented here.",
+    title: "A Comfortable Experience",
+    body: "From consultation to aftercare, we focus on making every client feel confident and supported.",
   },
 ];
 
@@ -27,15 +27,13 @@ export default function About() {
             <div className="lg:col-span-7">
               <span className="eyebrow mb-6 inline-block">Our Story</span>
               <h1 className="page-title">
-                A quieter way to find
-                <span className="italic block text-text-secondary">your next tattoo.</span>
+                Where every tattoo
+                <span className="italic block text-text-secondary">begins with a conversation.</span>
               </h1>
             </div>
             <div className="lg:col-span-5 flex items-end">
               <p className="subtitle">
-                Samava Tattoo Studio started as a private list shared between three
-                friends chasing good artists across three continents. It's
-                grown into a considered directory — still small on purpose.
+                Samava Tattoo Studio was built around one belief: every tattoo should be personal, thoughtfully designed, and made to last. We work closely with every client to transform ideas into meaningful artwork that feels uniquely theirs.
               </p>
             </div>
           </div>
@@ -77,10 +75,10 @@ export default function About() {
         <section className="section-padding pb-24 md:pb-32 bg-primary text-background">
           <div className="container-width flex flex-col items-center text-center gap-8 py-16">
             <h2 className="section-title text-background max-w-2xl">
-              Ready to find your artist?
+              Ready for your next tattoo?
             </h2>
             <Button to="/artists" variant="secondary" className="!border-white !text-background hover:!bg-white hover:!text-primary">
-              Browse the Network
+              Book a Consultation
             </Button>
           </div>
         </section>

@@ -35,10 +35,9 @@ export default function Gallery() {
         <section className="section-padding pt-36 pb-16">
           <div className="container-width">
             <span className="eyebrow mb-6 inline-block">The Gallery</span>
-            <h1 className="page-title max-w-3xl">Every piece, one archive.</h1>
+            <h1 className="page-title max-w-3xl">Every piece, one collection.</h1>
             <p className="subtitle mt-6">
-              Browse the complete collection across all artists and studios,
-              filtered by category or search.
+              Browse tattoo work from every Samava artist. Explore by style or search for a specific piece.
             </p>
           </div>
         </section>
@@ -50,17 +49,16 @@ export default function Gallery() {
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search pieces by title"
+                placeholder="Search tattoo designs..."
                 className="max-w-sm w-full bg-transparent border-b border-border pb-3 font-body text-sm placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
               />
               <div className="flex flex-wrap gap-2">
                 <button
                   onClick={() => setCategory("all")}
-                  className={`px-4 py-2 text-xs tracking-[0.08em] uppercase font-body rounded-full border transition-colors duration-300 ${
-                    activeSlug === "all"
-                      ? "bg-primary text-background border-primary"
-                      : "bg-transparent text-text-secondary border-border hover:border-primary"
-                  }`}
+                  className={`px-4 py-2 text-xs tracking-[0.08em] uppercase font-body rounded-full border transition-colors duration-300 ${activeSlug === "all"
+                    ? "bg-primary text-background border-primary"
+                    : "bg-transparent text-text-secondary border-border hover:border-primary"
+                    }`}
                 >
                   All
                 </button>
@@ -68,11 +66,10 @@ export default function Gallery() {
                   <button
                     key={c.id}
                     onClick={() => setCategory(c.slug)}
-                    className={`px-4 py-2 text-xs tracking-[0.08em] uppercase font-body rounded-full border transition-colors duration-300 ${
-                      activeSlug === c.slug
-                        ? "bg-primary text-background border-primary"
-                        : "bg-transparent text-text-secondary border-border hover:border-primary"
-                    }`}
+                    className={`px-4 py-2 text-xs tracking-[0.08em] uppercase font-body rounded-full border transition-colors duration-300 ${activeSlug === c.slug
+                      ? "bg-primary text-background border-primary"
+                      : "bg-transparent text-text-secondary border-border hover:border-primary"
+                      }`}
                   >
                     {c.name}
                   </button>

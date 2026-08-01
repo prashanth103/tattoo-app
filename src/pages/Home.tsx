@@ -9,7 +9,7 @@ import GallerySection from "@/components/sections/GallerySection";
 import CustomTattoos from "@/components/sections/CustomTattoos";
 import ClientStories from "@/components/sections/ClientStories";
 import FAQ from "@/components/sections/FAQ";
-import Newsletter from "@/components/sections/Newsletter";
+import FinalCTA from "@/components/sections/FinalCTA";
 
 export default function Home() {
   return (
@@ -24,8 +24,8 @@ export default function Home() {
         <CustomTattoos />
         <ClientStories />
         <FAQ />
-        {/* News letter remove */}
-        <Newsletter />
+        {/* Final CTA */}
+        <FinalCTA />
       </PageTransition>
     </MainLayout>
   );

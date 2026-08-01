@@ -27,33 +27,18 @@ export default function Artists() {
         <section className="section-padding pt-36 pb-16">
           <div className="container-width">
             <span className="eyebrow mb-6 inline-block">Our Network</span>
-            <h1 className="page-title max-w-3xl">Every artist, hand-vetted.</h1>
+            <h1 className="page-title max-w-3xl">Meet the artists behind Samava.</h1>
             <p className="subtitle mt-6">
-              Filter by speciality or search by name and city to find someone
-              whose work matches what you're picturing.
+              Get to know the artists behind Samava Tattoo Studio and explore the work they love creating.
             </p>
           </div>
         </section>
 
         <section className="section-padding pb-24 md:pb-32">
           <div className="container-width">
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-10 border-b border-border">
-              <SearchBar value={query} onChange={setQuery} placeholder="Search by name or city" className="max-w-sm w-full" />
-              <div className="flex flex-wrap gap-2">
-                {specialities.map((s) => (
-                  <button
-                    key={s}
-                    onClick={() => setFilter(s)}
-                    className={`px-4 py-2 text-xs tracking-[0.08em] uppercase font-body rounded-full border transition-colors duration-300 ${
-                      filter === s
-                        ? "bg-primary text-background border-primary"
-                        : "bg-transparent text-text-secondary border-border hover:border-primary"
-                    }`}
-                  >
-                    {s}
-                  </button>
-                ))}
-              </div>
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 pb-10 border-b border-border">
+              <h2 className="text-3xl font-display">Meet the team</h2>
+              <span className="eyebrow text-text-muted">OUR ARTISTS</span>
             </div>
 
             {filtered.length === 0 ? (

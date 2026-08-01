@@ -57,7 +57,7 @@ export default function Footer() {
         <div className="md:col-span-3 flex flex-col gap-4">
           <span className="eyebrow text-white/40">VISIT US</span>
           <p className="text-sm text-white/70 leading-relaxed">
-            Madhapur, Hyderabad<br />Monday – Saturday<br />10:00 — 19:00
+            Madhapur, Hyderabad
           </p>
           <span className="eyebrow text-white/40">OPEN DAILY</span>
           <p className="text-sm text-white/70 leading-relaxed">

@@ -9,11 +9,10 @@ export default function CategoriesPage() {
       <PageTransition>
         <section className="section-padding pt-36 pb-16">
           <div className="container-width">
-            <span className="eyebrow mb-6 inline-block">Categories</span>
-            <h1 className="page-title max-w-3xl">Six traditions, one archive.</h1>
+            <span className="eyebrow mb-6 inline-block">Styles</span>
+            <h1 className="page-title max-w-3xl">Six styles. Endless possibilities.</h1>
             <p className="subtitle mt-6">
-              Each category links straight into the gallery, pre-filtered to
-              that visual language.
+              Explore each tattoo style and browse related work from our artists.
             </p>
           </div>
         </section>
@@ -28,7 +27,7 @@ export default function CategoriesPage() {
 
         <section className="section-padding pb-24 md:pb-32 bg-surface pt-24">
           <div className="container-width">
-            <h2 className="section-title mb-10">Related styles</h2>
+            <h2 className="section-title mb-10">How it works</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {styles.map((style) => (
                 <div key={style.id} className="card-base overflow-hidden">

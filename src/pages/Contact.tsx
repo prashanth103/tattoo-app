@@ -24,8 +24,7 @@ export default function Contact() {
             <span className="eyebrow mb-6 inline-block">Get in Touch</span>
             <h1 className="page-title max-w-3xl">Let's start a conversation.</h1>
             <p className="subtitle mt-6">
-              Have a question about an artist, a studio, or how the platform
-              works? Send a note — a real person reads every message.
+              Have a tattoo idea or a question? Send us a message and we'll get back to you as soon as possible.
             </p>
           </div>
         </section>
@@ -44,14 +43,14 @@ export default function Contact() {
                 <Phone size={18} strokeWidth={1.5} className="mt-1 shrink-0" />
                 <div>
                   <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Phone</p>
-                  <p className="font-display text-xl">+1 (415) 555-0148</p>
+                  <p className="font-display text-xl">+91 9398667751</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <MapPin size={18} strokeWidth={1.5} className="mt-1 shrink-0" />
                 <div>
                   <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Studio</p>
-                  <p className="font-display text-xl">142 Ludlow Street<br />New York, NY</p>
+                  <p className="font-display text-xl">Samava Tattoo Studio<br />Madhapur<br />Hyderabad<br />Telangana<br />India</p>
                 </div>
               </div>
             </div>
@@ -74,7 +73,7 @@ export default function Contact() {
                         value={form.name}
                         onChange={(e) => handleChange("name", e.target.value)}
                         className="bg-transparent border-b border-border pb-3 font-body text-sm focus:outline-none focus:border-primary transition-colors"
-                        placeholder="Jane Rivera"
+                        placeholder="Your Name"
                       />
                     </div>
                     <div className="flex flex-col gap-2">
@@ -85,7 +84,7 @@ export default function Contact() {
                         value={form.email}
                         onChange={(e) => handleChange("email", e.target.value)}
                         className="bg-transparent border-b border-border pb-3 font-body text-sm focus:outline-none focus:border-primary transition-colors"
-                        placeholder="jane@email.com"
+                        placeholder="Email Address"
                       />
                     </div>
                   </div>
@@ -97,7 +96,7 @@ export default function Contact() {
                       value={form.message}
                       onChange={(e) => handleChange("message", e.target.value)}
                       className="bg-transparent border-b border-border pb-3 font-body text-sm focus:outline-none focus:border-primary transition-colors resize-none"
-                      placeholder="Tell us what you're looking for..."
+                      placeholder="Tell us about your tattoo idea, preferred style, placement, or any questions you have..."
                     />
                   </div>
                   <Button type="submit" variant="primary" className="self-start mt-2">

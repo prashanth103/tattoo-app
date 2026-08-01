@@ -30,7 +30,7 @@ export default function CategoryCard({ category, index = 0 }: CategoryCardProps)
           <div className="flex items-center justify-between">
             <div>
               <h3 className="font-display text-2xl text-white">{category.name}</h3>
-              <p className="text-white/70 text-xs font-body mt-1">{category.count} pieces</p>
+              <p className="text-white/70 text-xs font-body mt-1">{category.count} Designs</p>
             </div>
             <div className="w-9 h-9 rounded-full border border-white/40 flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:rotate-45 transition-all duration-500">
               <ArrowUpRight size={16} strokeWidth={1.5} className="text-white" />

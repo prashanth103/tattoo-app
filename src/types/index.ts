@@ -7,6 +7,7 @@ export interface Artist {
   rating: number;
   reviews: number;
   experience: string;
+  availability: string;
   bio: string;
   avatar: string;
   cover: string;

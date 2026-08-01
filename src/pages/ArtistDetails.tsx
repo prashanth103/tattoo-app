@@ -59,10 +59,14 @@ export default function ArtistDetails() {
                     <span className="font-display text-lg">{artist.location}</span>
                   </div>
                 </div>
+                <div>
+                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Availability</p>
+                  <p className="font-display text-lg">{artist.availability}</p>
+                </div>
               </div>
 
               <div className="pt-4">
-                <Button href="/contact" variant="primary">Request a Consultation</Button>
+                <Button href="/contact" variant="primary">BOOK WITH {artist.name}</Button>
               </div>
             </motion.div>
           </div>
