@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { CONTACT } from "@/constants/contact";
 import Button from "@/components/common/Button";
 
 export default function FinalCTA() {
@@ -22,7 +23,7 @@ export default function FinalCTA() {
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Button to="/contact" variant="primary">BOOK A TATTOO</Button>
-            <Button href="https://wa.me/" variant="secondary">WHATSAPP US</Button>
+            <Button href={`https://wa.me/${CONTACT.whatsappNumber}`} variant="secondary">WHATSAPP US</Button>
           </div>
         </motion.div>
       </div>

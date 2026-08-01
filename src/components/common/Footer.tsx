@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
+import { CONTACT } from "@/constants/contact";
 
 const socials = [
   {
     label: "Instagram",
-    href: "https://www.instagram.com/samavatattoostudios",
+    href: CONTACT.socials.instagram,
     path: "M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm5 5.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Zm5.75-.75a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z",
   },
   {
     label: "X",
-    href: "#",
+    href: CONTACT.socials.x,
     path: "M4 4l16 16M20 4L4 20",
   },
 ];
@@ -57,15 +58,15 @@ export default function Footer() {
         <div className="md:col-span-3 flex flex-col gap-4">
           <span className="eyebrow text-white/40">VISIT US</span>
           <p className="text-sm text-white/70 leading-relaxed">
-            Madhapur, Hyderabad
+            {CONTACT.address.short}
           </p>
           <span className="eyebrow text-white/40">OPEN DAILY</span>
           <p className="text-sm text-white/70 leading-relaxed">
-            10:30 AM — 9:30 PM
+            {CONTACT.hours}
           </p>
           <span className="eyebrow text-white/40">Contact</span>
-          <p className="text-sm text-white/70">+91 93986 67751</p>
-          <p className="text-sm text-white/70">samavatattoostudio@gmail.com</p>
+          <p className="text-sm text-white/70">{CONTACT.phone}</p>
+          <p className="text-sm text-white/70">{CONTACT.email}</p>
         </div>
       </div>
 

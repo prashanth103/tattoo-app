@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { CONTACT } from "@/constants/contact";
 import { Mail, MapPin, Phone } from "lucide-react";
 import MainLayout from "@/layouts/MainLayout";
 import PageTransition from "@/components/common/PageTransition";
@@ -36,21 +37,21 @@ export default function Contact() {
                 <Mail size={18} strokeWidth={1.5} className="mt-1 shrink-0" />
                 <div>
                   <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Email</p>
-                  <p className="font-display text-xl">samavatattoostudio@gmail.com</p>
+                  <p className="font-display text-xl">{CONTACT.email}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <Phone size={18} strokeWidth={1.5} className="mt-1 shrink-0" />
                 <div>
                   <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Phone</p>
-                  <p className="font-display text-xl">+91 9398667751</p>
+                  <p className="font-display text-xl">{CONTACT.phoneFormatted}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <MapPin size={18} strokeWidth={1.5} className="mt-1 shrink-0" />
                 <div>
                   <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Studio</p>
-                  <p className="font-display text-xl">Samava Tattoo Studio<br />Madhapur<br />Hyderabad<br />Telangana<br />India</p>
+                  <p className="font-display text-xl">{CONTACT.address.name}<br />{CONTACT.address.street}<br />{CONTACT.address.city}<br />{CONTACT.address.state}<br />{CONTACT.address.country}</p>
                 </div>
               </div>
             </div>

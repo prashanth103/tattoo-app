@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
+import { CONTACT } from "@/constants/contact";
 import { ArrowRight } from "lucide-react";
 
 export default function CustomTattoos() {
   const whatsappMessage = encodeURIComponent("Hi Samava Tattoo Studio, I'd like to discuss a tattoo idea.");
-  const whatsappLink = `https://wa.me/919398667751?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/${CONTACT.whatsappNumber}?text=${whatsappMessage}`;
 
   return (
     <section className="section-padding py-24 md:py-32 bg-primary text-background">
