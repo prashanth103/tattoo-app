@@ -49,6 +49,7 @@ export interface Review {
   quote: string;
   avatar: string;
   rating: number;
+  date: string;
 }
 
 export interface FAQItem {

@@ -12,6 +12,14 @@ import type {
 const img = (seed: string, w: number, h: number) =>
   `https://picsum.photos/seed/${seed}/${w}/${h}?grayscale`;
 
+export const GOOGLE_REVIEWS = {
+  rating: 4.9,
+  total: 243,
+  writeReviewUrl: "https://g.page/r/CaNXJek_6FxXEAI/review",
+  businessUrl: "https://share.google/NoFvaNDVvWfOu6ZYD",
+};
+
+
 export const styles: Style[] = [
   {
     id: 1,
@@ -176,27 +184,30 @@ export const reviews: Review[] = [
     name: "Harper Lin",
     role: "Collector, 6 pieces",
     quote:
-      "Every artist I've booked through here has treated the work like a real commission — not a transaction. The consultation process alone is worth it.",
+      "Amazing experience from start to finish! Every artist I've booked through here has treated the work like a real commission — not a transaction. The consultation process alone is worth it. They really take the time to make sure you're comfortable and the design is exactly what you want.",
     avatar: img("testimonial-1", 200, 200),
     rating: 5,
+    date: "2 weeks ago",
   },
   {
     id: 2,
     name: "Diego Fuentes",
     role: "First-time client",
     quote:
-      "I was nervous about my first piece. Mira walked me through placement, healing, and sizing before we ever touched a needle to skin.",
+      "I was nervous about my first piece but this studio is incredible. Mira walked me through placement, healing, and sizing before we ever touched a needle to skin. The place is super clean and everyone is extremely friendly and professional.",
     avatar: img("testimonial-2", 200, 200),
     rating: 5,
+    date: "1 month ago",
   },
   {
     id: 3,
     name: "Priya Nair",
     role: "Collector, 3 pieces",
     quote:
-      "The portfolio filtering made it so easy to find someone whose linework actually matched what I had in my head.",
+      "Absolutely love this place! The portfolio filtering made it so easy to find someone whose linework actually matched what I had in my head. I'll definitely be coming back for more pieces in the future.",
     avatar: img("testimonial-3", 200, 200),
-    rating: 4,
+    rating: 5,
+    date: "2 months ago",
   },
 ];
 

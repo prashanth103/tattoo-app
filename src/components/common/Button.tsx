@@ -9,6 +9,8 @@ interface ButtonProps {
   variant?: "primary" | "secondary" | "ghost";
   className?: string;
   type?: "button" | "submit";
+  target?: string;
+  rel?: string;
 }
 
 const variantClass = {
@@ -25,6 +27,8 @@ export default function Button({
   variant = "primary",
   className = "",
   type = "button",
+  target,
+  rel,
 }: ButtonProps) {
   const classes = `${variantClass[variant]} ${className}`;
 
@@ -38,7 +42,7 @@ export default function Button({
 
   if (href) {
     return (
-      <a href={href} className={classes}>
+      <a href={href} className={classes} target={target} rel={rel}>
         {children}
       </a>
     );

@@ -14,6 +14,17 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const text = `Hi Samava Tattoo Studio,
+
+Name: ${form.name}
+Email: ${form.email}
+
+Message: ${form.message}`;
+
+    const whatsappUrl = `https://wa.me/${CONTACT.whatsappNumber}?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, "_blank");
+
     setSent(true);
   };
 
@@ -80,7 +91,6 @@ export default function Contact() {
                     <div className="flex flex-col gap-2">
                       <label className="text-xs text-text-muted font-body uppercase tracking-widest">Email</label>
                       <input
-                        required
                         type="email"
                         value={form.email}
                         onChange={(e) => handleChange("email", e.target.value)}
