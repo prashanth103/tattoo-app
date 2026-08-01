@@ -24,7 +24,6 @@ export default function Home() {
         <CustomTattoos />
         <ClientStories />
         <FAQ />
-        {/* Final CTA */}
         <FinalCTA />
       </PageTransition>
     </MainLayout>

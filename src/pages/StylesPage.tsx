@@ -1,9 +1,9 @@
 import MainLayout from "@/layouts/MainLayout";
 import PageTransition from "@/components/common/PageTransition";
-import CategoryCard from "@/components/cards/CategoryCard";
-import { categories, styles } from "@/data/dummyData";
+import StyleCard from "@/components/cards/StyleCard";
+import { styles, howItWorks } from "@/data/dummyData";
 
-export default function CategoriesPage() {
+export default function StylesPage() {
   return (
     <MainLayout>
       <PageTransition>
@@ -19,8 +19,8 @@ export default function CategoriesPage() {
 
         <section className="section-padding pb-24 md:pb-32">
           <div className="container-width grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">
-            {categories.map((category, i) => (
-              <CategoryCard key={category.id} category={category} index={i} />
+            {styles.map((category, i) => (
+              <StyleCard key={category.id} category={category} index={i} />
             ))}
           </div>
         </section>
@@ -29,7 +29,7 @@ export default function CategoriesPage() {
           <div className="container-width">
             <h2 className="section-title mb-10">How it works</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {styles.map((style) => (
+              {howItWorks.map((style) => (
                 <div key={style.id} className="card-base overflow-hidden">
                   <div className="aspect-[4/3] overflow-hidden">
                     <img src={style.image} alt={style.name} className="w-full h-full object-cover" loading="lazy" />

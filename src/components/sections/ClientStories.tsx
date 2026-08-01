@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import { testimonials } from "@/data/dummyData";
+import { reviews } from "@/data/dummyData";
 import SectionTitle from "@/components/common/SectionTitle";
 
 export default function ClientStories() {
@@ -15,7 +15,7 @@ export default function ClientStories() {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-14">
-          {testimonials.map((t, i) => (
+          {reviews.map((t, i) => (
             <motion.div
               key={t.id}
               initial={{ opacity: 0, y: 30 }}

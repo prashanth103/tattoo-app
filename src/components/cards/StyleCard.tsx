@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import type { Category } from "@/types";
+import type { Style } from "@/types";
 
-interface CategoryCardProps {
-  category: Category;
+interface StyleCardProps {
+  category: Style;
   index?: number;
 }
 
-export default function CategoryCard({ category, index = 0 }: CategoryCardProps) {
+export default function StyleCard({ category, index = 0 }: StyleCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}

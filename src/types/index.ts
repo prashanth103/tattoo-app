@@ -26,7 +26,7 @@ export interface Tattoo {
   trending?: boolean;
 }
 
-export interface Category {
+export interface Style {
   id: number;
   name: string;
   slug: string;
@@ -35,24 +35,14 @@ export interface Category {
   count: number;
 }
 
-export interface Style {
+export interface HowItWorks {
   id: number;
   name: string;
   description: string;
   image: string;
 }
 
-export interface Studio {
-  id: number;
-  name: string;
-  city: string;
-  country: string;
-  image: string;
-  artistCount: number;
-  rating: number;
-}
-
-export interface Testimonial {
+export interface Review {
   id: number;
   name: string;
   role: string;

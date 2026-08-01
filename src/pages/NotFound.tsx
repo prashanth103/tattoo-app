@@ -13,7 +13,7 @@ export default function NotFound() {
             </span>
             <h1 className="section-title">This page hasn't been inked yet.</h1>
             <p className="subtitle mx-auto">
-              The page you're looking for doesn't exist or may have moved.
+              Looks like this design doesn't exist or has been moved.
             </p>
             <Button to="/" variant="primary">Back to Home</Button>
           </div>

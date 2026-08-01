@@ -1,5 +1,5 @@
-import { categories } from "@/data/dummyData";
-import CategoryCard from "@/components/cards/CategoryCard";
+import { styles } from "@/data/dummyData";
+import StyleCard from "@/components/cards/StyleCard";
 import SectionTitle from "@/components/common/SectionTitle";
 
 export default function TattooStyles() {
@@ -15,8 +15,8 @@ export default function TattooStyles() {
         />
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-6 mt-14">
-          {categories.map((category, i) => (
-            <CategoryCard key={category.id} category={category} index={i} />
+          {styles.map((category, i) => (
+            <StyleCard key={category.id} category={category} index={i} />
           ))}
         </div>
       </div>

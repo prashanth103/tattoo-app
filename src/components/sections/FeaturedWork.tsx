@@ -4,7 +4,7 @@ import SectionTitle from "@/components/common/SectionTitle";
 import Button from "@/components/common/Button";
 
 export default function FeaturedWork() {
-  const trending = tattoos.filter((t) => t.trending).slice(0, 6);
+  const trending = tattoos.filter((t) => t.trending).slice(0, 3);
 
   return (
     <section className="section-padding py-24 md:py-32 bg-surface">

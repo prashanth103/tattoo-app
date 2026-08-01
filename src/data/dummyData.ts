@@ -1,10 +1,9 @@
 import type {
   Artist,
   Tattoo,
-  Category,
   Style,
-  Studio,
-  Testimonial,
+  HowItWorks,
+  Review,
   FAQItem,
 } from "@/types";
 
@@ -13,7 +12,7 @@ import type {
 const img = (seed: string, w: number, h: number) =>
   `https://picsum.photos/seed/${seed}/${w}/${h}?grayscale`;
 
-export const categories: Category[] = [
+export const styles: Style[] = [
   {
     id: 1,
     name: "Portrait",
@@ -32,39 +31,55 @@ export const categories: Category[] = [
   },
   {
     id: 3,
-    name: "Fine Line",
-    slug: "fine-line",
+    name: "Colour",
+    slug: "fcolour",
     description: "Delicate single-needle detail with quiet restraint.",
     image: img("cat-fineline", 800, 1000),
     count: 51,
   },
   {
     id: 4,
-    name: "Minimal",
-    slug: "minimal",
+    name: "Big Scale",
+    slug: "big-scale",
     description: "Dense saturated ink built from pattern and contrast.",
     image: img("cat-blackwork", 800, 1000),
     count: 28,
   },
   {
     id: 5,
-    name: "Black & Grey",
-    slug: "black-grey",
+    name: "Cover Up",
+    slug: "cover-up",
     description: "Precision structure — sacred geometry meets skin.",
     image: img("cat-geometric", 800, 1000),
     count: 19,
   },
   {
     id: 6,
-    name: "Lettering",
-    slug: "lettering",
+    name: "Minimal",
+    slug: "Minimal",
     description: "The fewest possible lines to say the most.",
     image: img("cat-minimal", 800, 1000),
     count: 40,
   },
+  {
+    id: 7,
+    name: "Medium Scale",
+    slug: "medium-scale",
+    description: "Precision structure — sacred geometry meets skin.",
+    image: img("cat-geometric", 800, 1000),
+    count: 19,
+  },
+  {
+    id: 8,
+    name: "Band",
+    slug: "band",
+    description: "Precision structure — sacred geometry meets skin.",
+    image: img("cat-geometric", 800, 1000),
+    count: 19,
+  },
 ];
 
-export const styles: Style[] = [
+export const howItWorks: HowItWorks[] = [
   {
     id: 1,
     name: "Share Your Idea",
@@ -155,14 +170,7 @@ export const tattoos: Tattoo[] = [
   { id: 24, title: "Stag in Frost", category: "Neo-Traditional", artistId: 6, image: img("tattoo-24", 900, 900), aspect: "square" },
 ];
 
-export const studios: Studio[] = [
-  { id: 1, name: "Kuro Ink Studio", city: "Kyoto", country: "Japan", image: img("studio-kuro", 900, 700), artistCount: 6, rating: 4.9 },
-  { id: 2, name: "Studio Linear", city: "Berlin", country: "Germany", image: img("studio-linear", 900, 700), artistCount: 4, rating: 4.8 },
-  { id: 3, name: "The Atelier", city: "Los Angeles", country: "USA", image: img("studio-atelier", 900, 700), artistCount: 9, rating: 4.9 },
-  { id: 4, name: "Numero Tattoo Co.", city: "Florence", country: "Italy", image: img("studio-numero", 900, 700), artistCount: 5, rating: 4.7 },
-];
-
-export const testimonials: Testimonial[] = [
+export const reviews: Review[] = [
   {
     id: 1,
     name: "Harper Lin",

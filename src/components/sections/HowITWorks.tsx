@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { styles } from "@/data/dummyData";
+import { howItWorks } from "@/data/dummyData";
 import SectionTitle from "@/components/common/SectionTitle";
 
 export default function HowITWorks() {
@@ -13,7 +13,7 @@ export default function HowITWorks() {
         />
 
         <div className="mt-14 divide-y divide-border">
-          {styles.map((style, i) => (
+          {howItWorks.map((style, i) => (
             <motion.div
               key={style.id}
               initial={{ opacity: 0, y: 20 }}

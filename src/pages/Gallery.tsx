@@ -3,14 +3,14 @@ import { useSearchParams } from "react-router-dom";
 import MainLayout from "@/layouts/MainLayout";
 import PageTransition from "@/components/common/PageTransition";
 import TattooCard from "@/components/cards/TattooCard";
-import { tattoos, artists, categories } from "@/data/dummyData";
+import { tattoos, artists, styles } from "@/data/dummyData";
 
 export default function Gallery() {
   const [searchParams, setSearchParams] = useSearchParams();
   const activeSlug = searchParams.get("category") ?? "all";
   const [query, setQuery] = useState("");
 
-  const activeCategory = categories.find((c) => c.slug === activeSlug)?.name;
+  const activeCategory = styles.find((c) => c.slug === activeSlug)?.name;
 
   const filtered = useMemo(() => {
     return tattoos.filter((t) => {
@@ -62,7 +62,7 @@ export default function Gallery() {
                 >
                   All
                 </button>
-                {categories.map((c) => (
+                {styles.map((c) => (
                   <button
                     key={c.id}
                     onClick={() => setCategory(c.slug)}

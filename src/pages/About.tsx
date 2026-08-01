@@ -77,7 +77,7 @@ export default function About() {
             <h2 className="section-title text-background max-w-2xl">
               Ready for your next tattoo?
             </h2>
-            <Button to="/artists" variant="secondary" className="!border-white !text-background hover:!bg-white hover:!text-primary">
+            <Button to="/contact" variant="secondary" className="!border-white !text-background hover:!bg-white hover:!text-primary">
               Book a Consultation
             </Button>
           </div>
