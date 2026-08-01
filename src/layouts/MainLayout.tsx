@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
+import Chatbot from "@/components/chatbot/Chatbot";
 
 export default function MainLayout({ children }: { children: ReactNode }) {
   return (
@@ -8,6 +9,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
       <Navbar />
       <main className="flex-1">{children}</main>
       <Footer />
+      <Chatbot />
     </div>
   );
 }
