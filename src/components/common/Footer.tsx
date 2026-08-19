@@ -87,10 +87,25 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="container-width section-padding py-6 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div className="container-width section-padding py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/40 font-body">
             © {new Date().getFullYear()} Samava Tattoo Studio. All rights reserved.
           </p>
+          <div className="flex items-center gap-6 text-xs text-white/50 font-body">
+            <Link
+              to="/privacy-policy"
+              className="hover:text-white transition-colors duration-300"
+            >
+              Privacy Policy
+            </Link>
+            <span className="text-white/20">/</span>
+            <Link
+              to="/terms-and-conditions"
+              className="hover:text-white transition-colors duration-300"
+            >
+              Terms & Conditions
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

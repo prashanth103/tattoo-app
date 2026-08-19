@@ -8,7 +8,6 @@ import TattooCard from "@/components/cards/TattooCard";
 import { artists } from "@/data/dummyData";
 import { tattooImages } from "@/data/tattooImages";
 import SEO from "@/components/common/SEO";
-import { tattooConfig } from "@/data/tattooConfig";
 
 export default function ArtistDetails() {
   const { slug } = useParams();

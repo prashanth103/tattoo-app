@@ -1,26 +1,12 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import MainLayout from "@/layouts/MainLayout";
 import PageTransition from "@/components/common/PageTransition";
-import SearchBar from "@/components/common/SearchBar";
 import ArtistCard from "@/components/cards/ArtistCard";
 import { artists } from "@/data/dummyData";
 import SEO from "@/components/common/SEO";
 
-const specialities = ["All", ...Array.from(new Set(artists.map((a) => a.speciality)))];
-
 export default function Artists() {
-  const [query, setQuery] = useState("");
-  const [filter, setFilter] = useState("All");
-
-  const filtered = useMemo(() => {
-    return artists.filter((a) => {
-      const matchesQuery =
-        a.name.toLowerCase().includes(query.toLowerCase()) ||
-        a.location.toLowerCase().includes(query.toLowerCase());
-      const matchesFilter = filter === "All" || a.speciality === filter;
-      return matchesQuery && matchesFilter;
-    });
-  }, [query, filter]);
+  const filtered = useMemo(() => artists, []);
 
   return (
     <MainLayout>
