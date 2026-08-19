@@ -4,7 +4,7 @@ import Button from "@/components/common/Button";
 
 export default function HeroBanner() {
   return (
-    <section className="relative min-h-[92vh] flex items-end overflow-hidden bg-background pt-32">
+    <section className="relative min-h-[auto] md:min-h-[92vh] flex items-end overflow-hidden bg-background pt-28 md:pt-32">
       {/* Signature element: a single continuous ink line that draws itself in on load,
           echoing a single-needle tattoo stroke. */}
       <motion.svg
@@ -24,8 +24,8 @@ export default function HeroBanner() {
         />
       </motion.svg>
 
-      <div className="container-width section-padding relative w-full pb-24">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
+      <div className="container-width section-padding relative w-full pb-16 md:pb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-end">
           <div className="lg:col-span-8">
             <motion.span
               initial={{ opacity: 0, y: 12 }}

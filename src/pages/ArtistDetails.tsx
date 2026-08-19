@@ -1,12 +1,14 @@
 import { useParams, Navigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Star, MapPin, BadgeCheck } from "lucide-react";
+import { MapPin, BadgeCheck } from "lucide-react";
 import MainLayout from "@/layouts/MainLayout";
 import PageTransition from "@/components/common/PageTransition";
 import Button from "@/components/common/Button";
 import TattooCard from "@/components/cards/TattooCard";
-import { artists, tattoos } from "@/data/dummyData";
+import { artists } from "@/data/dummyData";
+import { tattooImages } from "@/data/tattooImages";
 import SEO from "@/components/common/SEO";
+import { tattooConfig } from "@/data/tattooConfig";
 
 export default function ArtistDetails() {
   const { slug } = useParams();
@@ -14,7 +16,9 @@ export default function ArtistDetails() {
 
   if (!artist) return <Navigate to="/404" replace />;
 
-  const portfolio = tattoos.filter((t) => artist.portfolio.includes(t.id));
+  const portfolio = tattooImages.filter(
+    (t) => t.artistId === artist.id
+  );
   const others = artists.filter((a) => a.id !== artist.id).slice(0, 4);
 
   return (
@@ -52,28 +56,38 @@ export default function ArtistDetails() {
 
               <div className="flex flex-wrap gap-8 pt-2">
                 <div>
-                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Speciality</p>
+                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">
+                    Speciality
+                  </p>
                   <p className="font-display text-lg">{artist.speciality}</p>
                 </div>
                 <div>
-                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Experience</p>
+                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">
+                    Experience
+                  </p>
                   <p className="font-display text-lg">{artist.experience}</p>
                 </div>
                 <div>
-                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Location</p>
+                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">
+                    Location
+                  </p>
                   <div className="flex items-center gap-1.5">
                     <MapPin size={15} strokeWidth={1.5} />
                     <span className="font-display text-lg">{artist.location}</span>
                   </div>
                 </div>
                 <div>
-                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Availability</p>
+                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">
+                    Availability
+                  </p>
                   <p className="font-display text-lg">{artist.availability}</p>
                 </div>
               </div>
 
               <div className="pt-4">
-                <Button href="/contact" variant="primary">BOOK WITH {artist.name}</Button>
+                <Button href="/contact" variant="primary">
+                  BOOK WITH {artist.name}
+                </Button>
               </div>
             </motion.div>
           </div>
@@ -96,7 +110,7 @@ export default function ArtistDetails() {
           <div className="container-width">
             <h2 className="section-title mb-10">More artists</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-              {others.map((a, i) => (
+              {others.map((a) => (
                 <Link key={a.id} to={`/artists/${a.slug}`} className="group block">
                   <div className="aspect-[4/5] overflow-hidden rounded-card bg-card">
                     <img

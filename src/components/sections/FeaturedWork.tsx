@@ -1,10 +1,16 @@
-import { tattoos, artists } from "@/data/dummyData";
+import { artists } from "@/data/dummyData";
+import { tattooImages } from "@/data/tattooImages";
 import TattooCard from "@/components/cards/TattooCard";
 import SectionTitle from "@/components/common/SectionTitle";
 import Button from "@/components/common/Button";
+import { tattooConfig } from "@/data/tattooConfig";
+import type { Tattoo } from "@/types";
 
 export default function FeaturedWork() {
-  const trending = tattoos.filter((t) => t.trending).slice(0, 3);
+
+  const trending = tattooConfig.featured
+    .map((key) => tattooImages.find((tattoo) => tattoo.key === key))
+    .filter((tattoo): tattoo is Tattoo => Boolean(tattoo));
 
   return (
     <section className="section-padding py-24 md:py-32 bg-surface">

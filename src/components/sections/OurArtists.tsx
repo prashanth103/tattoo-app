@@ -7,7 +7,7 @@ export default function OurArtists() {
   const featured = artists.filter((a) => a.featured);
 
   return (
-    <section className="section-padding py-24 md:py-32">
+    <section className="section-padding py-4 md:py-32">
       <div className="container-width">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-14">
           <SectionTitle

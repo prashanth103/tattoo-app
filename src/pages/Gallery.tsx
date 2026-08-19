@@ -3,31 +3,40 @@ import { useSearchParams } from "react-router-dom";
 import MainLayout from "@/layouts/MainLayout";
 import PageTransition from "@/components/common/PageTransition";
 import TattooCard from "@/components/cards/TattooCard";
-import { tattoos, artists, styles } from "@/data/dummyData";
+import { artists } from "@/data/dummyData";
+import { tattooImages } from "@/data/tattooImages";
 import SEO from "@/components/common/SEO";
+import { styles } from "@/data/styles";
 
 export default function Gallery() {
   const [searchParams, setSearchParams] = useSearchParams();
   const activeSlug = searchParams.get("category") ?? "all";
   const [query, setQuery] = useState("");
+  const [visibleCount, setVisibleCount] = useState(24);
 
   const activeCategory = styles.find((c) => c.slug === activeSlug)?.name;
 
   const filtered = useMemo(() => {
-    return tattoos.filter((t) => {
+    return tattooImages.filter((t) => {
       const matchesCategory = !activeCategory || t.category === activeCategory;
       const matchesQuery = t.title.toLowerCase().includes(query.toLowerCase());
       return matchesCategory && matchesQuery;
     });
   }, [activeCategory, query]);
 
+  const visibleTattoos = filtered.slice(0, visibleCount);
+
   const setCategory = (slug: string) => {
+    const params = new URLSearchParams(searchParams);
+
     if (slug === "all") {
-      searchParams.delete("category");
+      params.delete("category");
     } else {
-      searchParams.set("category", slug);
+      params.set("category", slug);
     }
-    setSearchParams(searchParams);
+
+    setVisibleCount(24);
+    setSearchParams(params);
   };
 
   return (
@@ -44,7 +53,8 @@ export default function Gallery() {
             <span className="eyebrow mb-6 inline-block">The Gallery</span>
             <h1 className="page-title max-w-3xl">Every piece, one collection.</h1>
             <p className="subtitle mt-6">
-              Browse tattoo work from every Samava artist. Explore by style or search for a specific piece.
+              Browse tattoo work from every Samava artist. Explore by style or search for a specific
+              piece.
             </p>
           </div>
         </section>
@@ -55,7 +65,10 @@ export default function Gallery() {
               <input
                 type="text"
                 value={query}
-                onChange={(e) => setQuery(e.target.value)}
+                onChange={(e) => {
+                  setQuery(e.target.value);
+                  setVisibleCount(24);
+                }}
                 placeholder="Search tattoo designs..."
                 className="max-w-sm w-full bg-transparent border-b border-border pb-3 font-body text-sm placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
               />
@@ -89,17 +102,31 @@ export default function Gallery() {
                 Nothing matches yet — try a different category or search term.
               </p>
             ) : (
-              <div className="columns-2 md:columns-4 gap-4 md:gap-6 space-y-4 md:space-y-6 pt-12">
-                {filtered.map((tattoo, i) => (
-                  <div key={tattoo.id} className="break-inside-avoid">
-                    <TattooCard
-                      tattoo={tattoo}
-                      artistName={artists.find((a) => a.id === tattoo.artistId)?.name}
-                      index={i}
-                    />
+              <>
+                <div className="columns-2 md:columns-4 gap-4 md:gap-6 space-y-4 md:space-y-6 pt-12">
+                  {visibleTattoos.map((tattoo, i) => (
+                    <div key={tattoo.id} className="break-inside-avoid">
+                      <TattooCard
+                        tattoo={tattoo}
+                        artistName={artists.find((a) => a.id === tattoo.artistId)?.name}
+                        index={i}
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                {visibleCount < filtered.length && (
+                  <div className="flex justify-center pt-12">
+                    <button
+                      type="button"
+                      onClick={() => setVisibleCount((count) => count + 24)}
+                      className="px-6 py-3 text-xs tracking-[0.08em] uppercase font-body rounded-full border border-border text-text-secondary hover:border-primary hover:text-primary transition-colors duration-300"
+                    >
+                      Load More
+                    </button>
                   </div>
-                ))}
-              </div>
+                )}
+              </>
             )}
           </div>
         </section>

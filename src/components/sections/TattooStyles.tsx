@@ -1,4 +1,4 @@
-import { styles } from "@/data/dummyData";
+import { styles } from "@/data/styles";
 import StyleCard from "@/components/cards/StyleCard";
 import SectionTitle from "@/components/common/SectionTitle";
 

@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { CONTACT } from "@/constants/contact";
 import { ArrowRight } from "lucide-react";
+import { tattooImages } from "@/data/tattooImages";
+import { tattooConfig } from "@/data/tattooConfig";
 
 export default function CustomTattoos() {
   const whatsappMessage = encodeURIComponent(
@@ -8,6 +10,10 @@ export default function CustomTattoos() {
   );
   const whatsappLink = `https://wa.me/${CONTACT.whatsappNumber}?text=${whatsappMessage}`;
 
+  const customTattoo =
+    tattooImages.find(
+      (tattoo) => tattoo.key === tattooConfig.customTattoos[0]
+    )?.image ?? "";
   return (
     <section className="section-padding py-24 md:py-32 bg-primary text-background">
       <div className="container-width">
@@ -46,8 +52,13 @@ export default function CustomTattoos() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="aspect-square md:aspect-[21/9] w-full overflow-hidden rounded-card relative group"
         >
-          <img
+          {/* <img
             src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=2000&auto=format&fit=crop"
+            alt="Samava Custom Tattoos"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-80"
+          /> */}
+          <img
+            src={customTattoo}
             alt="Samava Custom Tattoos"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-80"
           />

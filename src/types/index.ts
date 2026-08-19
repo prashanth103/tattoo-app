@@ -18,8 +18,11 @@ export interface Artist {
 
 export interface Tattoo {
   id: number;
+  key: string;
   title: string;
   category: string;
+  slug: string;
+  filename: string;
   artistId: number;
   image: string;
   aspect: "portrait" | "square" | "landscape";

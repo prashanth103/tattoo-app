@@ -1,8 +1,9 @@
 import MainLayout from "@/layouts/MainLayout";
 import PageTransition from "@/components/common/PageTransition";
 import StyleCard from "@/components/cards/StyleCard";
-import { styles, howItWorks } from "@/data/dummyData";
 import SEO from "@/components/common/SEO";
+import { styles } from "@/data/styles";
+import { howItWorks } from "@/data/dummyData";
 
 export default function StylesPage() {
   return (
@@ -39,7 +40,12 @@ export default function StylesPage() {
               {howItWorks.map((style) => (
                 <div key={style.id} className="card-base overflow-hidden">
                   <div className="aspect-[4/3] overflow-hidden">
-                    <img src={style.image} alt={style.name} className="w-full h-full object-cover" loading="lazy" />
+                    <img
+                      src={style.image}
+                      alt={style.name}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="p-6">
                     <h3 className="font-display text-xl">{style.name}</h3>
