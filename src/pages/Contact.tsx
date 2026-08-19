@@ -43,7 +43,8 @@ Message: ${form.message}`;
             <span className="eyebrow mb-6 inline-block">Get in Touch</span>
             <h1 className="page-title max-w-3xl">Let's start a conversation.</h1>
             <p className="subtitle mt-6">
-              Have a tattoo idea or a question? Send us a message and we'll get back to you as soon as possible.
+              Have a tattoo idea or a question? Send us a message and we'll get back to you as soon
+              as possible.
             </p>
           </div>
         </section>
@@ -54,22 +55,38 @@ Message: ${form.message}`;
               <div className="flex items-start gap-4">
                 <Mail size={18} strokeWidth={1.5} className="mt-1 shrink-0" />
                 <div>
-                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Email</p>
+                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">
+                    Email
+                  </p>
                   <p className="font-display text-xl">{CONTACT.email}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <Phone size={18} strokeWidth={1.5} className="mt-1 shrink-0" />
                 <div>
-                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Phone</p>
+                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">
+                    Phone
+                  </p>
                   <p className="font-display text-xl">{CONTACT.phoneFormatted}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <MapPin size={18} strokeWidth={1.5} className="mt-1 shrink-0" />
                 <div>
-                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">Studio</p>
-                  <p className="font-display text-xl">{CONTACT.address.name}<br />{CONTACT.address.street}<br />{CONTACT.address.city}<br />{CONTACT.address.state}<br />{CONTACT.address.country}</p>
+                  <p className="text-xs text-text-muted font-body uppercase tracking-widest mb-1">
+                    Studio
+                  </p>
+                  <p className="font-display text-xl">
+                    {CONTACT.address.name}
+                    <br />
+                    {CONTACT.address.street}
+                    <br />
+                    {CONTACT.address.city}
+                    <br />
+                    {CONTACT.address.state}
+                    <br />
+                    {CONTACT.address.country}
+                  </p>
                 </div>
               </div>
             </div>
@@ -86,7 +103,9 @@ Message: ${form.message}`;
                 <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2">
-                      <label className="text-xs text-text-muted font-body uppercase tracking-widest">Name</label>
+                      <label className="text-xs text-text-muted font-body uppercase tracking-widest">
+                        Name
+                      </label>
                       <input
                         required
                         value={form.name}
@@ -96,7 +115,9 @@ Message: ${form.message}`;
                       />
                     </div>
                     <div className="flex flex-col gap-2">
-                      <label className="text-xs text-text-muted font-body uppercase tracking-widest">Email</label>
+                      <label className="text-xs text-text-muted font-body uppercase tracking-widest">
+                        Email
+                      </label>
                       <input
                         type="email"
                         value={form.email}
@@ -107,7 +128,9 @@ Message: ${form.message}`;
                     </div>
                   </div>
                   <div className="flex flex-col gap-2">
-                    <label className="text-xs text-text-muted font-body uppercase tracking-widest">Message</label>
+                    <label className="text-xs text-text-muted font-body uppercase tracking-widest">
+                      Message
+                    </label>
                     <textarea
                       required
                       rows={5}

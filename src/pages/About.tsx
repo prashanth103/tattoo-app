@@ -35,12 +35,16 @@ export default function About() {
               <span className="eyebrow mb-6 inline-block">Our Story</span>
               <h1 className="page-title">
                 Where every tattoo
-                <span className="italic block text-text-secondary">begins with a conversation.</span>
+                <span className="italic block text-text-secondary">
+                  begins with a conversation.
+                </span>
               </h1>
             </div>
             <div className="lg:col-span-5 flex items-end">
               <p className="subtitle">
-                Samava Tattoo Studio was built around one belief: every tattoo should be personal, thoughtfully designed, and made to last. We work closely with every client to transform ideas into meaningful artwork that feels uniquely theirs.
+                Samava Tattoo Studio was built around one belief: every tattoo should be personal,
+                thoughtfully designed, and made to last. We work closely with every client to
+                transform ideas into meaningful artwork that feels uniquely theirs.
               </p>
             </div>
           </div>
@@ -81,10 +85,12 @@ export default function About() {
 
         <section className="section-padding pb-24 md:pb-32 bg-primary text-background">
           <div className="container-width flex flex-col items-center text-center gap-8 py-16">
-            <h2 className="section-title text-background max-w-2xl">
-              Ready for your next tattoo?
-            </h2>
-            <Button to="/contact" variant="secondary" className="!border-white !text-background hover:!bg-white hover:!text-primary">
+            <h2 className="section-title text-background max-w-2xl">Ready for your next tattoo?</h2>
+            <Button
+              to="/contact"
+              variant="secondary"
+              className="!border-white !text-background hover:!bg-white hover:!text-primary"
+            >
               Book a Consultation
             </Button>
           </div>

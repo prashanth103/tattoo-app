@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Star } from "lucide-react";
 import type { Artist } from "@/types";
 
 interface ArtistCardProps {

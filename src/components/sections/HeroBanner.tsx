@@ -63,11 +63,16 @@ export default function HeroBanner() {
             className="lg:col-span-4 flex flex-col gap-6 lg:pb-3"
           >
             <p className="subtitle">
-              Custom tattoos designed around your ideas, memories and references — created with attention to detail and made personal to you.
+              Custom tattoos designed around your ideas, memories and references — created with
+              attention to detail and made personal to you.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button to="/contact" variant="primary">BOOK A TATTOO</Button>
-              <Button to="/gallery" variant="secondary">View Gallery</Button>
+              <Button to="/contact" variant="primary">
+                BOOK A TATTOO
+              </Button>
+              <Button to="/gallery" variant="secondary">
+                View Gallery
+              </Button>
             </div>
           </motion.div>
         </div>
@@ -79,7 +84,9 @@ export default function HeroBanner() {
           className="hidden md:flex items-center gap-3 mt-20 text-text-muted"
         >
           <ArrowDown size={14} strokeWidth={1.5} className="animate-bounce" />
-          <span className="text-[11px] tracking-[0.24em] uppercase font-body">Scroll to explore</span>
+          <span className="text-[11px] tracking-[0.24em] uppercase font-body">
+            Scroll to explore
+          </span>
         </motion.div>
       </div>
     </section>

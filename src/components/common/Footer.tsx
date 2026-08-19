@@ -23,7 +23,8 @@ export default function Footer() {
             <span className="italic">Samava </span>Tattoo Studio
           </span>
           <p className="font-body text-sm font-light text-white/60 leading-relaxed max-w-sm">
-            Custom tattoos and personal designs, created at Samava Tattoo Studio in Madhapur, Hyderabad.
+            Custom tattoos and personal designs, created at Samava Tattoo Studio in Madhapur,
+            Hyderabad.
           </p>
           <div className="flex items-center gap-4 pt-2">
             {socials.map((s) => (
@@ -33,7 +34,14 @@ export default function Footer() {
                 aria-label={s.label}
                 className="text-white/60 hover:text-white transition-colors"
               >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
                   <path d={s.path} />
                 </svg>
               </a>
@@ -43,27 +51,35 @@ export default function Footer() {
 
         <div className="md:col-span-2 flex flex-col gap-4">
           <span className="eyebrow text-white/40">Explore</span>
-          <Link to="/artists" className="text-sm text-white/70 hover:text-white transition-colors">Artists</Link>
-          <Link to="/gallery" className="text-sm text-white/70 hover:text-white transition-colors">Gallery</Link>
-          <Link to="/styles" className="text-sm text-white/70 hover:text-white transition-colors">Styles</Link>
+          <Link to="/artists" className="text-sm text-white/70 hover:text-white transition-colors">
+            Artists
+          </Link>
+          <Link to="/gallery" className="text-sm text-white/70 hover:text-white transition-colors">
+            Gallery
+          </Link>
+          <Link to="/styles" className="text-sm text-white/70 hover:text-white transition-colors">
+            Styles
+          </Link>
         </div>
 
         <div className="md:col-span-2 flex flex-col gap-4">
           <span className="eyebrow text-white/40">Studio</span>
-          <Link to="/about" className="text-sm text-white/70 hover:text-white transition-colors">About</Link>
-          <Link to="/contact" className="text-sm text-white/70 hover:text-white transition-colors">Contact</Link>
-          <a href="/contact" className="text-sm text-white/70 hover:text-white transition-colors">Book a Tattoo</a>
+          <Link to="/about" className="text-sm text-white/70 hover:text-white transition-colors">
+            About
+          </Link>
+          <Link to="/contact" className="text-sm text-white/70 hover:text-white transition-colors">
+            Contact
+          </Link>
+          <a href="/contact" className="text-sm text-white/70 hover:text-white transition-colors">
+            Book a Tattoo
+          </a>
         </div>
 
         <div className="md:col-span-3 flex flex-col gap-4">
           <span className="eyebrow text-white/40">VISIT US</span>
-          <p className="text-sm text-white/70 leading-relaxed">
-            {CONTACT.address.short}
-          </p>
+          <p className="text-sm text-white/70 leading-relaxed">{CONTACT.address.short}</p>
           <span className="eyebrow text-white/40">OPEN DAILY</span>
-          <p className="text-sm text-white/70 leading-relaxed">
-            {CONTACT.hours}
-          </p>
+          <p className="text-sm text-white/70 leading-relaxed">{CONTACT.hours}</p>
           <span className="eyebrow text-white/40">Contact</span>
           <p className="text-sm text-white/70">{CONTACT.phone}</p>
           <p className="text-sm text-white/70">{CONTACT.email}</p>

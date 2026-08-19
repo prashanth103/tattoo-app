@@ -14,16 +14,18 @@ export default function FinalCTA() {
           className="border border-border rounded-xl px-8 py-16 md:px-20 md:py-24 flex flex-col items-center text-center gap-8"
         >
           <span className="eyebrow">READY WHEN YOU ARE</span>
-          <h2 className="section-title max-w-2xl">
-            Thinking about your next tattoo?
-          </h2>
+          <h2 className="section-title max-w-2xl">Thinking about your next tattoo?</h2>
           <p className="subtitle mx-auto">
             Share your idea with us and let's discuss the design, placement and details.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Button to="/contact" variant="primary">BOOK A TATTOO</Button>
-            <Button href={`https://wa.me/${CONTACT.whatsappNumber}`} variant="secondary">WHATSAPP US</Button>
+            <Button to="/contact" variant="primary">
+              BOOK A TATTOO
+            </Button>
+            <Button href={`https://wa.me/${CONTACT.whatsappNumber}`} variant="secondary">
+              WHATSAPP US
+            </Button>
           </div>
         </motion.div>
       </div>

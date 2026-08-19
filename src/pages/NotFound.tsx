@@ -15,7 +15,9 @@ export default function NotFound() {
             <p className="subtitle mx-auto">
               Looks like this design doesn't exist or has been moved.
             </p>
-            <Button to="/" variant="primary">Back to Home</Button>
+            <Button to="/" variant="primary">
+              Back to Home
+            </Button>
           </div>
         </section>
       </PageTransition>

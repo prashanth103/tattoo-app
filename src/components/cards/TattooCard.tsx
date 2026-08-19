@@ -34,7 +34,8 @@ export default function TattooCard({ tattoo, artistName, index = 0 }: TattooCard
       <div className="absolute bottom-0 left-0 right-0 p-5 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
         <p className="text-white font-display text-lg leading-tight">{tattoo.title}</p>
         <p className="text-white/70 text-xs font-body mt-1 tracking-wide uppercase">
-          {tattoo.category}{artistName ? ` · ${artistName}` : ""}
+          {tattoo.category}
+          {artistName ? ` · ${artistName}` : ""}
         </p>
       </div>
     </motion.div>

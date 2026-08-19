@@ -6,11 +6,7 @@ export default function HowITWorks() {
   return (
     <section className="section-padding py-24 md:py-32 bg-surface">
       <div className="container-width">
-        <SectionTitle
-          index="04"
-          eyebrow="HOW IT WORKS"
-          title="From idea to ink"
-        />
+        <SectionTitle index="04" eyebrow="HOW IT WORKS" title="From idea to ink" />
 
         <div className="mt-14 divide-y divide-border">
           {howItWorks.map((style, i) => (
@@ -32,7 +28,12 @@ export default function HowITWorks() {
                 {style.description}
               </p>
               <div className="md:col-span-2 h-20 w-full overflow-hidden rounded-card opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 hidden md:block">
-                <img src={style.image} alt={style.name} className="w-full h-full object-cover" loading="lazy" />
+                <img
+                  src={style.image}
+                  alt={style.name}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
             </motion.div>
           ))}

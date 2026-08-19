@@ -3,7 +3,9 @@ import { CONTACT } from "@/constants/contact";
 import { ArrowRight } from "lucide-react";
 
 export default function CustomTattoos() {
-  const whatsappMessage = encodeURIComponent("Hi Samava Tattoo Studio, I'd like to discuss a tattoo idea.");
+  const whatsappMessage = encodeURIComponent(
+    "Hi Samava Tattoo Studio, I'd like to discuss a tattoo idea.",
+  );
   const whatsappLink = `https://wa.me/${CONTACT.whatsappNumber}?text=${whatsappMessage}`;
 
   return (
@@ -14,14 +16,16 @@ export default function CustomTattoos() {
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-32 mb-16 md:mb-24">
           <div className="md:w-1/2">
             <h2 className="section-title text-background">
-              Your idea.<br />
+              Your idea.
+              <br />
               Made personal.
             </h2>
           </div>
 
           <div className="md:w-1/2 flex flex-col items-start justify-end">
             <p className="text-white/70 font-body text-base md:text-lg leading-relaxed font-light mb-8 max-w-xl">
-              Have a photo, sketch, reference, memory, or simply an idea? Bring it to us. We'll work with you to shape it into a tattoo that's personal to you.
+              Have a photo, sketch, reference, memory, or simply an idea? Bring it to us. We'll work
+              with you to shape it into a tattoo that's personal to you.
             </p>
 
             <a

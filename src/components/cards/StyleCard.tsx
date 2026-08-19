@@ -16,7 +16,10 @@ export default function StyleCard({ category, index = 0 }: StyleCardProps) {
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.7, delay: (index % 3) * 0.1, ease: [0.16, 1, 0.3, 1] }}
     >
-      <Link to={`/gallery?category=${category.slug}`} className="group block relative overflow-hidden rounded-card">
+      <Link
+        to={`/gallery?category=${category.slug}`}
+        className="group block relative overflow-hidden rounded-card"
+      >
         <div className="aspect-[3/4] overflow-hidden bg-card">
           <img
             src={category.image}

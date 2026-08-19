@@ -20,7 +20,10 @@ function tokenize(message: string): string[] {
   }
 
   // Single-word tokens
-  const words = lower.replace(/[^a-z0-9\s'-]/g, "").split(/\s+/).filter(Boolean);
+  const words = lower
+    .replace(/[^a-z0-9\s'-]/g, "")
+    .split(/\s+/)
+    .filter(Boolean);
 
   return [...phrases, ...words];
 }
