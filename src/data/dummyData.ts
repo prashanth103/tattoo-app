@@ -1,4 +1,5 @@
 import type { Artist, HowItWorks, Review, FAQItem } from "@/types";
+import saiArtist from "../assets/images/sai-artist.jpeg";
 
 // Deterministic grayscale placeholder photography — swap for real
 // photography assets when connecting this frontend to a backend.
@@ -52,7 +53,7 @@ export const artists: Artist[] = [
     experience: "Tattoo Artist · 3 Years Experience",
     availability: "Available this week",
     bio: "Sai specializes in custom tattoos inspired by personal ideas and references. He works closely with every client to create designs that fit naturally with the body and remain timeless.",
-    avatar: '/src/assets/images/sai-artist.jpeg',
+    avatar: saiArtist,
     cover: img("artist-mira-cover", 1200, 800),
     portfolio: [1, 7, 13, 19],
     studio: "Samava Tattoo Studio",
