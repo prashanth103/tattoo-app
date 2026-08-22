@@ -30,9 +30,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-background/90 backdrop-blur-md border-b border-border" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/90 backdrop-blur-md border-b border-border" : "bg-transparent"
+        }`}
     >
       <div className="container-width section-padding flex items-center justify-between h-20 md:h-24">
         <NavLink to="/" className="font-display text-2xl tracking-tight text-text-primary">
@@ -46,8 +45,7 @@ export default function Navbar() {
               to={link.to}
               end={link.to === "/"}
               className={({ isActive }) =>
-                `font-body text-[13px] tracking-[0.08em] uppercase transition-colors duration-300 ${
-                  isActive ? "text-text-primary" : "text-text-secondary hover:text-text-primary"
+                `font-body text-[13px] tracking-[0.08em] uppercase transition-colors duration-300 ${isActive ? "text-text-primary" : "text-text-secondary hover:text-text-primary"
                 }`
               }
             >
@@ -88,8 +86,7 @@ export default function Navbar() {
                   end={link.to === "/"}
                   onClick={() => setOpen(false)}
                   className={({ isActive }) =>
-                    `font-display text-3xl py-3 border-b border-border ${
-                      isActive ? "text-text-primary" : "text-text-secondary"
+                    `font-display text-3xl py-3 border-b border-border ${isActive ? "text-text-primary" : "text-text-secondary"
                     }`
                   }
                 >
@@ -98,7 +95,7 @@ export default function Navbar() {
               ))}
               <div className="pt-6">
                 <Button
-                  to="/artists"
+                  to="/contact"
                   variant="primary"
                   onClick={() => setOpen(false)}
                   className="w-full"

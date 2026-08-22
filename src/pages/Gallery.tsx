@@ -62,16 +62,6 @@ export default function Gallery() {
         <section className="section-padding pb-24 md:pb-32">
           <div className="container-width">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-10 border-b border-border">
-              <input
-                type="text"
-                value={query}
-                onChange={(e) => {
-                  setQuery(e.target.value);
-                  setVisibleCount(24);
-                }}
-                placeholder="Search tattoo designs..."
-                className="max-w-sm w-full bg-transparent border-b border-border pb-3 font-body text-sm placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
-              />
               <div className="flex flex-wrap gap-2">
                 <button
                   onClick={() => setCategory("all")}
