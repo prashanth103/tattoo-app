@@ -19,7 +19,7 @@ export default function Home() {
         title="Best Tattoo Studio in Hyderabad"
         description="Samava Tattoo Studio creates custom tattoos, realism, blackwork, fine line, anime, geometric, and cover-up tattoos in Hyderabad."
         keywords="Tattoo Studio Hyderabad, Best Tattoo Artist Hyderabad, Custom Tattoos Hyderabad, Fine Line Tattoos, Realism Tattoos, Blackwork Tattoos"
-        url="https://www.samavatattoostudio.com/"
+        url="https://samavatattoo.com/"
       />
 
       <PageTransition>

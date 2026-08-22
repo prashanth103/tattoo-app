@@ -34,7 +34,7 @@ Message: ${form.message}`;
       <SEO
         title="Contact"
         description="Book your tattoo consultation or visit Samava Tattoo Studio in Hyderabad."
-        url="https://www.samavatattoostudio.com/contact"
+        url="https://samavatattoo.com/contact"
       />
 
       <PageTransition>

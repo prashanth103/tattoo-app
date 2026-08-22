@@ -38,7 +38,7 @@ export default function TermsConditions() {
       <SEO
         title="Terms & Conditions"
         description="Review the website terms, consultation process, booking guidelines, and studio disclaimers for Samava Tattoo Studio."
-        url="https://www.samavatattoostudio.com/terms-and-conditions"
+        url="https://samavatattoo.com/terms-and-conditions"
       />
 
       <PageTransition>
@@ -120,10 +120,10 @@ export default function TermsConditions() {
                     These Terms & Conditions (&ldquo;Terms&rdquo;) apply to your access to and use
                     of the <strong>Samava Tattoo Studio</strong> website (
                     <a
-                      href="https://www.samavatattoostudio.com"
+                      href="https://samavatattoo.com"
                       className="text-text-primary underline"
                     >
-                      samavatattoostudio.com
+                      samavatattoo.com
                     </a>
                     ), digital assistant, and consultation links.
                   </p>

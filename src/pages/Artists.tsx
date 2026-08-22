@@ -13,7 +13,7 @@ export default function Artists() {
       <SEO
         title="Tattoo Artists"
         description="Meet the talented tattoo artists at Samava Tattoo Studio in Hyderabad."
-        url="https://www.samavatattoostudio.com/artists"
+        url="https://samavatattoo.com/artists"
       />
 
       <PageTransition>

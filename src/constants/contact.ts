@@ -14,6 +14,5 @@ export const CONTACT = {
   hours: "10:30 AM — 9:30 PM",
   socials: {
     instagram: "https://www.instagram.com/samavatattoostudios",
-    x: "#", // Add X/Twitter link if available
   }
 };

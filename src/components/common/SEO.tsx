@@ -9,8 +9,8 @@ interface SEOProps {
 }
 
 const SITE_NAME = "Samava Tattoo Studio";
-const SITE_URL = "https://www.samavatattoostudio.com";
-const DEFAULT_IMAGE = "/og-image.jpg";
+const SITE_URL = "https://samavatattoo.com";
+const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`;
 
 export default function SEO({
   title,
@@ -32,6 +32,7 @@ export default function SEO({
 
       <meta name="robots" content="index, follow" />
 
+      {/* Canonical URL */}
       <link rel="canonical" href={url} />
 
       {/* Open Graph */}
@@ -41,12 +42,6 @@ export default function SEO({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
-
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={fullTitle} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
     </Helmet>
   );
 }

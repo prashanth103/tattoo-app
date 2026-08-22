@@ -25,7 +25,7 @@ export default function About() {
       <SEO
         title="About Us"
         description="Learn more about Samava Tattoo Studio and our commitment to exceptional tattoo artistry."
-        url="https://www.samavatattoostudio.com/about"
+        url="https://samavatattoo.com/about"
       />
 
       <PageTransition>

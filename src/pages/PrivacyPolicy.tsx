@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
       <SEO
         title="Privacy Policy"
         description="Learn how Samava Tattoo Studio handles your information, consultation inquiries, WhatsApp communications, and local chatbot data."
-        url="https://www.samavatattoostudio.com/privacy-policy"
+        url="https://samavatattoo.com/privacy-policy"
       />
 
       <PageTransition>
@@ -122,10 +122,10 @@ export default function PrivacyPolicy() {
                     &ldquo;our&rdquo;, or &ldquo;us&rdquo;), located in Madhapur, Hyderabad, Telangana, India,
                     and describes the privacy practices relating to our website (
                     <a
-                      href="https://www.samavatattoostudio.com"
+                      href="https://samavatattoo.com"
                       className="text-text-primary underline"
                     >
-                      samavatattoostudio.com
+                      samavatattoo.com
                     </a>
                     ), our client-side interactive assistant, and direct communication channels.
                   </p>

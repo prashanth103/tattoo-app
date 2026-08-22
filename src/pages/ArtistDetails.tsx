@@ -25,7 +25,7 @@ export default function ArtistDetails() {
       <SEO
         title={`${artist.name} | Tattoo Artist`}
         description={artist.bio}
-        url={`https://www.samavatattoostudio.com/artists/${artist.slug}`}
+        url={`https://samavatattoo.com/artists/${artist.slug}`}
       />
 
       <PageTransition>

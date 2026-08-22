@@ -44,7 +44,7 @@ export default function Gallery() {
       <SEO
         title="Tattoo Gallery"
         description="Browse our portfolio of custom tattoos and artwork."
-        url="https://www.samavatattoostudio.com/gallery"
+        url="https://samavatattoo.com/gallery"
       />
 
       <PageTransition>

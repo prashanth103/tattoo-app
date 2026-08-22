@@ -11,7 +11,7 @@ export default function StylesPage() {
       <SEO
         title="Tattoo Styles"
         description="Explore realism, blackwork, fine line, anime, geometric and custom tattoo styles."
-        url="https://www.samavatattoostudio.com/styles"
+        url="https://samavatattoo.com/styles"
       />
 
       <PageTransition>
