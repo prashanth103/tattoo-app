@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.samavatattoostudio.com/sitemap.xml
+Sitemap: https://samavatattoo.com/sitemap.xml
